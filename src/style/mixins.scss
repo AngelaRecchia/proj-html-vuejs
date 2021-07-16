@@ -1,0 +1,10 @@
+@import "../style/vars.scss";
+@mixin button($bg, $color ) {
+    background-color: $bg;
+    padding: 10px 15px;
+    border: 1px solid $green;
+    color: $color;
+    text-transform: uppercase;
+    display: inline-block;  
+    border-radius: 5px;
+}
