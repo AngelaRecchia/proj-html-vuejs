@@ -10,4 +10,8 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/commons.scss";
+
+main {
+  height: 1000px;
+}
 </style>

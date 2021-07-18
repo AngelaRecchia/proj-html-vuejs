@@ -7,4 +7,9 @@
     text-transform: uppercase;
     display: inline-block;  
     border-radius: 5px;
+    cursor: pointer;
+}
+
+@mixin highlight ($bg){
+    background: linear-gradient(to top,  rgba($color: $bg, $alpha: .5) 50%, transparent 50%);
 }
