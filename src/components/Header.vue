@@ -119,7 +119,7 @@
           of employees.
         </p>
 
-        <div class="button-gw">Get in Touch</div>
+        <div class="button-gw me-4">Get in Touch</div>
 
         <div class="button-tlg">Learn More</div>
       </div>
@@ -234,7 +234,7 @@ nav {
       z-index: 2;
 
       &:hover {
-        color: $green;
+        color: $lightgreen;
       }
 
       i {
@@ -297,6 +297,7 @@ nav {
     font-size: 18px;
     letter-spacing: 2px;
     font-weight: 600;
+    text-transform: uppercase;
 
     #logo-nex {
       color: $green;
@@ -330,10 +331,6 @@ nav {
   .main-description {
     color: $lightgrey;
     font-size: 18px;
-  }
-
-  .button-gw {
-    margin-right: 30px;
   }
 }
 </style>

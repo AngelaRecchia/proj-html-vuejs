@@ -32,7 +32,6 @@ export default {
   }
 
   h5 {
-    font-weight: 700;
     margin: 20px 0;
   }
 

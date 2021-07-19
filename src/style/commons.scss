@@ -15,12 +15,12 @@ a, a:active, a:hover {
 }
 
 a, li {
-    transition: color .5s, border-color .5s;
+    transition: color .3s, border-color .3s;
     cursor: pointer;
 }
 
 a:hover {
-    color: $green;
+    color: $lightgreen;
 }
 
 ul {
@@ -48,26 +48,51 @@ body {
     margin: auto;
 }
 
+h5 {
+    font-weight: 700;
+}
+
 .button-gw {
     @include button($green, white);
     &:hover {
-        background: lighten($green, 5%);
+        background: $lightgreen;
     }
 }
 
 .button-tlg {
     @include button(transparent, $lightgrey);
     &:hover {
-        background: rgba(0,0,0, 0.5);
+        background: rgba(0, 0, 0, 0.8);
     }
+}
 
+.button-tg {
+    @include button(transparent, $green);
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: $green;
+    }
 }
 
 .section-name {
     text-transform: uppercase;
-    color: $green;
+    color: $lightgreen;
     font-weight: 600;
     font-size: $medium;
+}
+
+.title {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.text {
+    font-size: $medium;
+    color: $darkgrey;
+}
+
+.blue-black {
+    color: $blueblack;
 }
 
 .highlighted {
@@ -85,9 +110,20 @@ body {
     z-index: -1;
 }
 
+.highlight-grey{
+    @include highlight($lightgrey);
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 2.5px;
+    bottom: 2px;
+    z-index: -1;
+}
+
 .circled {
     border-radius: 50%;
-    background-color: $lightgreen;
+    background-color: $llgreen;
 }
 
 .blink {
