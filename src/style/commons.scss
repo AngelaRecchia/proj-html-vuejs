@@ -43,6 +43,10 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+section {
+    padding: 15vh 0;
+}
+
 .container {
     width: 75%;
     margin: auto;
@@ -50,6 +54,11 @@ body {
 
 h5 {
     font-weight: 700;
+    margin: 20px 0;
+}
+
+.blue-black {
+    color: $blueblack;
 }
 
 .button-gw {
@@ -84,6 +93,7 @@ h5 {
 .title {
     font-size: 45px;
     font-weight: 800;
+    margin: 15px 0;
 }
 
 .text {
@@ -91,34 +101,16 @@ h5 {
     color: $darkgrey;
 }
 
-.blue-black {
-    color: $blueblack;
-}
-
 .highlighted {
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 .highlight-green{
     @include highlight($green);
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 2.5px;
-    bottom: 2px;
-    z-index: -1;
 }
 
 .highlight-grey{
     @include highlight($lightgrey);
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 2.5px;
-    bottom: 2px;
-    z-index: -1;
 }
 
 .circled {

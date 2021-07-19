@@ -163,6 +163,7 @@ export default {
 
 header {
   height: 100vh;
+  min-height: 550px;
   position: relative;
   font-size: $medium;
 }

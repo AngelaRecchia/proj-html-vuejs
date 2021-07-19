@@ -4,7 +4,7 @@
       <img :src="content.img" :alt="content.title" />
     </div>
 
-    <h5>{{ content.title }}</h5>
+    <h5 class="blue-black">{{ content.title }}</h5>
 
     <p>{{ content.text }}</p>
   </div>
@@ -29,10 +29,6 @@ export default {
   &:hover {
     transform: translateY(-8px);
     z-index: 0;
-  }
-
-  h5 {
-    margin: 20px 0;
   }
 
   p {

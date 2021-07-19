@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="clearfix w-100">
-    <div class="w-50 d-flex align-items-center h-100">
+    <div class="w-50">
       <div class="container">
         <div class="section-name">About the Network</div>
 
@@ -19,7 +19,7 @@
         <div class="row row-cols-2 my-4">
           <div class="box" v-for="(elem, index) in about" :key="index">
             <div class="count">{{ elem.count }}</div>
-            <h5>{{ elem.title }}</h5>
+            <h5 class="blue-black my-2">{{ elem.title }}</h5>
             <p class="text">{{ elem.text }}</p>
           </div>
         </div>
@@ -47,7 +47,6 @@ export default {
 <style lang="scss" scoped>
 @import "@/style/commons.scss";
 #about {
-  height: 600px;
   background-image: url(https://nexgen.codings.dev/wp-content/uploads/2021/03/about-5.jpg);
   background-position: bottom right;
   background-repeat: no-repeat;

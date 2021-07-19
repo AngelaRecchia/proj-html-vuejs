@@ -17,4 +17,11 @@
 
 @mixin highlight ($bg){
     background: linear-gradient(to top,  rgba($color: $bg, $alpha: .5) 50%, transparent 50%);
+    display: inline-block;
+    width: 98%;
+    height: 100%;
+    position: absolute;
+    left: 2.5px;
+    bottom: 2px;
+    z-index: -1;
 }
