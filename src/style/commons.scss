@@ -126,6 +126,20 @@ h5 {
     background-color: $llgreen;
 }
 
+.dots {
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    height: 49px;
+    overflow: hidden;
+    position: absolute;
+
+    img {
+        width: 120px;
+        filter: invert(90%) sepia(26%) saturate(115%) hue-rotate(128deg) brightness(105%) contrast(86%);
+    }
+}
+
 .blink {
     animation: blink 1.5s infinite;
 }

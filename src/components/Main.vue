@@ -1,7 +1,9 @@
 <template>
   <main>
     <Overview />
+    <div class="dots"><img src="../assets/img/dots.svg" alt="" /></div>
     <About />
+    <div class="dots"><img src="../assets/img/dots.svg" alt="" /></div>
   </main>
 </template>
 
@@ -19,7 +21,4 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/commons.scss";
-
-main {
-}
 </style>
