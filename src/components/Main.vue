@@ -1,9 +1,15 @@
 <template>
-  <main></main>
+  <main>
+    <Overview />
+  </main>
 </template>
 
 <script>
+import Overview from "./Overview.vue";
 export default {
+  components: {
+    Overview,
+  },
   name: "Main",
 };
 </script>
@@ -12,6 +18,5 @@ export default {
 @import "@/style/commons.scss";
 
 main {
-  height: 1000px;
 }
 </style>

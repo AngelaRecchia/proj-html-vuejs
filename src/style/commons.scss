@@ -33,6 +33,12 @@ ul {
     clear: both;
 }
 
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -76,6 +82,11 @@ body {
     left: 2.5px;
     bottom: 2px;
     z-index: -1;
+}
+
+.circled {
+    border-radius: 50%;
+    background-color: $lightgreen;
 }
 
 .blink {

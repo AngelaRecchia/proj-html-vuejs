@@ -129,14 +129,14 @@
 
 <script>
 import Navmenu from "../data/Navmenu.js";
+import Contacts from "../data/Contacts.js";
 
 export default {
   name: "Header",
-  components: {},
   data() {
     return {
-      tel: "+1 (305) 1234-5678",
-      email: "hello@example.com",
+      tel: Contacts.tel,
+      email: Contacts.email,
       navmenu: Navmenu,
       scrollPosition: 0,
       sticked: false,
@@ -313,7 +313,7 @@ nav {
 }
 
 #jumbotron {
-  height: 100%;
+  height: calc(100% - 50px);
   min-height: 500px;
   #subcont > * {
     margin-top: 20px;
