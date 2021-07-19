@@ -215,6 +215,7 @@ nav {
   font-weight: 500;
   position: fixed;
   top: 50px;
+  z-index: 99;
 
   #nav-right {
     display: flex;

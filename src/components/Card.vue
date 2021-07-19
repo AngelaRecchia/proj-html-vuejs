@@ -28,6 +28,7 @@ export default {
 
   &:hover {
     transform: translateY(-8px);
+    z-index: 0;
   }
 
   h5 {

@@ -1,14 +1,17 @@
 <template>
   <main>
     <Overview />
+    <About />
   </main>
 </template>
 
 <script>
 import Overview from "./Overview.vue";
+import About from "./About.vue";
 export default {
   components: {
     Overview,
+    About,
   },
   name: "Main",
 };
