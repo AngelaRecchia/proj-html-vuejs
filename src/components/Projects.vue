@@ -104,7 +104,6 @@ export default {
 @import "@/style/commons.scss";
 #projects {
   background-color: $blueblack;
-  height: 1900px;
 
   .inOutGroup {
     overflow: hidden;

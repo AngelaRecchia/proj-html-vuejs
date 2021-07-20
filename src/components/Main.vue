@@ -5,6 +5,7 @@
     <About />
     <div class="dots"><img src="../assets/img/dots.svg" alt="" /></div>
     <Projects />
+    <Process />
   </main>
 </template>
 
@@ -12,12 +13,14 @@
 import Overview from "./Overview.vue";
 import About from "./About.vue";
 import Projects from "./Projects.vue";
+import Process from "./Process.vue";
 
 export default {
   components: {
     Overview,
     About,
     Projects,
+    Process,
   },
   name: "Main",
 };
