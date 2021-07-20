@@ -1,6 +1,6 @@
 <template>
   <section id="process">
-    <div class="small-container text-center">
+    <div class="small-container">
       <div class="section-name">How it works in practice</div>
 
       <div class="title blue-black">

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row row-cols-3">
         <div class="col" v-for="(elem, index) in content" :key="index">
-          <Card :content="elem" circled="true" />
+          <Card :content="elem" isCircled="true" />
         </div>
       </div>
     </div>
