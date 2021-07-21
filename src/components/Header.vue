@@ -17,16 +17,18 @@
           </a>
         </div>
 
-        <div id="contacts">
-          <a href="tel:tel">
-            <i class="fas fa-phone-alt"></i>
-            {{ tel }}
-          </a>
+        <div id="contacts" class="d-flex">
+          <div v-for="(elem, index) in contacts" :key="index">
+            <a v-if="elem.type == 'tel'" href="tel:tel">
+              <i class="fas fa-phone-alt"></i>
+              {{ elem.value }}
+            </a>
 
-          <a href="mailto:email">
-            <i class="fas fa-envelope"></i>
-            {{ email }}
-          </a>
+            <a v-if="elem.type == 'email'" href="mailto:email">
+              <i class="fas fa-envelope"></i>
+              {{ elem.value }}
+            </a>
+          </div>
 
           <a href="#"><i class="fab fa-facebook-f"></i></a>
 
@@ -135,8 +137,7 @@ export default {
   name: "Header",
   data() {
     return {
-      tel: Contacts.tel,
-      email: Contacts.email,
+      contacts: Contacts,
       navmenu: Navmenu,
       scrollPosition: 0,
       sticked: false,
@@ -158,8 +159,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "@/style/commons.scss";
-@import "../style/mixins.scss";
-@import "../style/vars.scss";
 
 header {
   height: 100vh;
