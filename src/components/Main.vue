@@ -7,6 +7,7 @@
     <Projects />
     <Process />
     <Feedback />
+    <News />
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import About from "./About.vue";
 import Projects from "./Projects.vue";
 import Process from "./Process.vue";
 import Feedback from "./Feedback.vue";
+import News from "./News.vue";
 
 export default {
   components: {
@@ -24,6 +26,7 @@ export default {
     Projects,
     Process,
     Feedback,
+    News,
   },
   name: "Main",
 };
